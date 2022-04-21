@@ -1,4 +1,6 @@
+import java.text.DecimalFormat;
 import java.util.Scanner;
+import java.lang.Math;
 
 public class Question2
 {
@@ -9,8 +11,26 @@ public class Question2
      * 
      * Hint: in.nextDouble() to read double
      */
-     
-    Scanner in = new Scanner(System.in);
-    double height = in.nextDouble();
+
+    boolean check = true;
+    double weight = 0;
+    double height = 0;
+    while (check){
+      check = false;
+      Scanner in = new Scanner(System.in);
+      try {
+        System.out.println("Enter weight (Kg)");
+        weight = in.nextDouble();
+        System.out.println("Enter height (m)");
+        height = in.nextDouble();
+      }
+      catch (Exception e){
+        check = true;
+        System.out.println("Input value is invalid\n");
+      }
+    }
+    double bmi = weight / Math.pow(height,2);
+    DecimalFormat dp2 = new DecimalFormat("#0.00");
+    System.out.println("Bmi: " + dp2.format(bmi));
   }
 }

@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.lang.Math;
 
 public class Question3
 {
@@ -9,8 +10,24 @@ public class Question3
      * 
      * Hint: in.nextInt() to read integer
      */
-     
-    Scanner in = new Scanner(System.in);
-    
+
+
+    boolean check = true;
+    int userinp = 0;
+    while (check){
+      check = false;
+      Scanner in = new Scanner(System.in);
+      try {
+        System.out.println("Enter an integear");
+        userinp = in.nextInt();
+      }
+      catch (Exception e){
+        check = true;
+        System.out.println("Input value is invalid\n");
+      }
+    }
+    int result = (int) Math.pow(userinp,2);
+    System.out.println("Result: " + result);
+
   }
 }
