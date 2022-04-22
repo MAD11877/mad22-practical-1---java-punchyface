@@ -19,10 +19,10 @@ public class Question2
       check = false;
       Scanner in = new Scanner(System.in);
       try {
-        System.out.print("Enter weight (Kg): ");
-        weight = in.nextDouble();
         System.out.print("Enter height (m): ");
         height = in.nextDouble();
+        System.out.print("Enter weight (Kg): ");
+        weight = in.nextDouble();
       }
       catch (Exception e){
         check = true;
@@ -31,6 +31,7 @@ public class Question2
     }
     double bmi = weight / Math.pow(height,2);
     //DecimalFormat dp2 = new DecimalFormat("#0.00");
+    //System.out.println("Bmi: " + dp2.format(bmi));
     System.out.println(bmi);
   }
 }
