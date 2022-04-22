@@ -30,7 +30,7 @@ public class Question2
       }
     }
     double bmi = weight / Math.pow(height,2);
-    DecimalFormat dp2 = new DecimalFormat("#0.0");
-    System.out.println("Bmi: " + dp2.format(bmi));
+    //DecimalFormat dp2 = new DecimalFormat("#0.00");
+    System.out.println(bmi);
   }
 }
