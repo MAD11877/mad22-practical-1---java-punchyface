@@ -67,6 +67,6 @@ public class Question5
         highestfrequency += obj + ", ";
       }
     }
-    System.out.println(highestfrequency.substring(0, highestfrequency.length()-2));
+    System.out.println("Highest occurrence: " + highestfrequency.substring(0, highestfrequency.length()-2));
   }
 }
