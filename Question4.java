@@ -23,7 +23,7 @@ public class Question4
       check = false;
       Scanner in = new Scanner(System.in);
       try {
-        System.out.println("Enter an integer");
+        System.out.print("Enter an integer: ");
         userinp = in.nextInt();
       }
       catch (Exception e){

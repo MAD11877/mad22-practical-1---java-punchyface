@@ -18,7 +18,7 @@ public class Question3
       check = false;
       Scanner in = new Scanner(System.in);
       try {
-        System.out.println("Enter an integear");
+        System.out.print("Enter an integear: ");
         userinp = in.nextInt();
       }
       catch (Exception e){
