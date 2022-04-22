@@ -27,7 +27,7 @@ public class Question3
       }
     }
     int result = (int) Math.pow(userinp,2);
-    System.out.println("Result: " + result);
+    System.out.println(result);
 
   }
 }
