@@ -32,7 +32,7 @@ public class Question5
       check0 = false;
       Scanner obj = new Scanner(System.in);
       try {
-        System.out.print("Enter of integer for input: ");
+        //System.out.print("Enter of integer for input: ");
         numofint = obj.nextInt();
       } catch (Exception e) {
         check0 = true;
@@ -46,7 +46,7 @@ public class Question5
         check = false;
         Scanner in = new Scanner(System.in);
         try {
-          System.out.print("Enter an integer: ");
+          //System.out.print("Enter an integer: ");
           userinp = in.nextInt();
         } catch (Exception e) {
           check = true;

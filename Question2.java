@@ -19,10 +19,10 @@ public class Question2
       check = false;
       Scanner in = new Scanner(System.in);
       try {
-        System.out.print("Enter height (m): ");
-        height = in.nextDouble();
-        System.out.print("Enter weight (Kg): ");
+        //System.out.print("Enter weight (Kg): ");
         weight = in.nextDouble();
+        //System.out.print("Enter height (m): ");
+        height = in.nextDouble();
       }
       catch (Exception e){
         check = true;
